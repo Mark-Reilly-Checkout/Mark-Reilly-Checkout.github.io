@@ -5,8 +5,8 @@ const fs = require("fs");
 var express = require( "express");
 var path = require( "path");
 var router = express.Router();
-var cko = new Checkout ("sk_test_3elad21b-ac23-4eb3-ad1f-375e9fb56481", {
-pk: "pk_test_ac89202e-4531-43b3-a830-94f0151cd49"
+var cko = new Checkout ("sk_sbox_vyafhd3nyddbhrs6ks53gpx2mi5", {
+pk: "pk_sbox_pcryphhmlglkd3yrodsz4woudqy"
 });
 // Display the HTML page by default
 router.get("/", (req, res) => {res.sendFile (path.join(_dirname, "../front-end/index.html"));
