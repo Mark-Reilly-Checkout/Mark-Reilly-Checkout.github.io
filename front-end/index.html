@@ -1,21 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Apple Pay</title>
-</head>
-<body>
-
-    <div class="apple-pay-button"
-        style="display: none;"></div>
-
-    <apple-pay-button buttonstyle="black" type="buy" locale="el-GR"></apple-pay-button>
-
-    <script src="applepay.js"></script>
-    <script src="https://applepay.cdn-apple.com/jsapi/v1.1.0/apple-pay-sdk.js"></script>
-</body>
-</html>
+/* Template for logo only button (height independent). */
+/* HTML */
+<div class="apple-pay-button apple-pay-button-white"></div>
+/* Template for "Buy with" button with height: 32 */
+/* HTML */
+<div class="apple-pay-button-with-text apple-pay-button-white-with-text">
+  <span class="text">Buy with</span>
+  <span class="logo"></span>
+</div>
 
 

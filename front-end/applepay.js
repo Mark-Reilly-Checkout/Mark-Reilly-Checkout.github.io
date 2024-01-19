@@ -5,10 +5,18 @@ var BACKEND_URL_PAY = window.location.href + "pay";
 var appleButton = document. querySelector(".apple-pay-button");
 // Check if Apple Pay is available
 if (
-window.ApplePaySession && ApplePaySession. canMakePaymentsWithActiveCard(MECHAT_ID)){
+window.ApplePaySession && ApplePaySession.canMakePaymentsWithActiveCard(MECHAT_ID)){
 // show the Apple Pay button
 appleButton.style.display = "block";
 }
+
+/*if (window.ApplePaySession) {
+    var merchantIdentifier = 'mark-reilly-checkout.github.io';
+    var promise = ApplePaySession.canMakePaymentsWithActiveCard(merchantIdentifier);
+    promise.then(function (canMakePayments) {
+       if (canMakePayments)
+          // Display Apple Pay button here.
+ }); }*/
 
 // Hanle the apple pay button click
 appleButton.addEventListener("click", function() {
