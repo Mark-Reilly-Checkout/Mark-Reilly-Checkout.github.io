@@ -11,9 +11,6 @@
 </head>
 <body>
 
-    <h2>Tesdfdfgdgdt</h2>
-
-
      <style>
      apple-pay-button {
      --apple-pay-button-width: 150px;
@@ -23,8 +20,9 @@
      --apple-pay-button-box-sizing: border-box;
     }
     </style>
-    <apple-pay-button buttonstyle="black" type="plain" locale="en-US"></apple-pay-button>
+    <apple-pay-button buttonstyle="black" type="plain" locale="en-US" style="display: none;"></apple-pay-button>
 
+    <script src="applepay.js"></script>
     <script async crossorigin
         src="https://applepay.cdn-apple.com/jsapi/v1.1.0/apple-pay-sdk.js"
         ></script>

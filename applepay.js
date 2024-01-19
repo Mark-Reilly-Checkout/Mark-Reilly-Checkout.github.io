@@ -10,14 +10,6 @@ window.ApplePaySession && ApplePaySession.canMakePaymentsWithActiveCard(MECHAT_I
 appleButton.style.display = "block";
 }
 
-/*if (window.ApplePaySession) {
-    var merchantIdentifier = 'mark-reilly-checkout.github.io';
-    var promise = ApplePaySession.canMakePaymentsWithActiveCard(merchantIdentifier);
-    promise.then(function (canMakePayments) {
-       if (canMakePayments)
-          // Display Apple Pay button here.
- }); }*/
-
 // Hanle the apple pay button click
 appleButton.addEventListener("click", function() {
     var applePaySession = new ApplePaySession (6, {
