@@ -9,7 +9,7 @@ var cko = new Checkout ("sk_sbox_vyafhd3nyddbhrs6ks53gpx2mi5", {
 pk: "pk_sbox_pcryphhmlglkd3yrodsz4woudqy"
 });
 // Display the HTML page by default
-router.get("/", (req, res) => {res.sendFile (path.join(_dirname, "../front-end/index.html"));
+router.get("/", (req, res) => {res.sendFile (path.join(_dirname, "../index.html"));
 });
 // Validate the Apple Pay session
 router.post("/validateSession", async (reg, res)=>{
